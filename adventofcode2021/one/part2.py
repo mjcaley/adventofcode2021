@@ -32,7 +32,7 @@ if __name__ == "__main__":
     data = []
 
     with open(sys.argv[1], "r") as file:
-        for line in file.readlines():
+        for line in file:
             data.append(int(line))
 
     print(part2(data))
